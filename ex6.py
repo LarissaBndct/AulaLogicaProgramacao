@@ -1,10 +1,10 @@
 import os
-print("~~~~~~~~~~~~~Calculadora~~~~~~~~~~~~")
+print(f'{"Calculadora":~^60}')
 
 while True:
     operacao = input("Escolha a operação adição = +, subtração = -,multiplicação = * e divisão = / \n(ou digite qualquer tecla para sair)\n")
     ehOperacao = operacao == "+" or operacao == "-" or operacao == "*" or operacao == "/"   
-    if(ehOperacao == False):
+    if(ehOperacao == False): 
         os.system("cls")
         break
     op1 = float(input("Digite o primerio número da operação "))
