@@ -96,6 +96,9 @@ cada uma está "realizada" - True ou "não realizada" - False.
 3. enviar e-mail        - realizada
 4. fazer compras        - Não realizada
 
+para imprimir da forma acima:
+print(f"{i}.{tarefa:<20}")
+
 Caso não tenha nenhuma tarefa , reportar a mensagem :
 > Não existe tarefas na lista.
 '''
