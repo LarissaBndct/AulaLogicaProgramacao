@@ -40,4 +40,93 @@ Menu de opções:
 #Caso o usuário tecle <enter> no item, o programa deverá indicar
 #item inválido e solicitar que o mesmo digite o item novamente.
 
+================================================================================================
 
+#Exer1 - Gerenciador de Tarefas Diárias:
+#=============================================================
+#O usuário poderá adicionar uma nova tarefa à lista.
+#Cada tarefa incluirá uma descrição e um status de 
+#"realizada" - True ou "não realizada" - False
+#O usuário poderá remover uma tarefa existente da lista,
+#se ela estiver cadastrada.
+#O programa deverá listar as tarefas.
+#O usuário poderá marcar uma tarefa específica como realizada.
+#O usuário poderá listar tarefas realizadas e não realizadas.
+#O programa deverá oferecer as seguintes funcionalidades:
+#=============================================================
+'''
+Menu de Opções:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Listar todas as tarefas
+4. Marcar tarefa como realizada
+5. Listar tarefas realizadas
+6. Listar tarefas não realizadas
+7. Sair
+'''
+#1.Adicionar Tarefas 
+'''
+O programa deve validar a entrada, não permitindo tarefas vazias 
+(use o método strip() para remover espaços em branco).
+Todas as tarefas são inseridas com o status False (não realizada)
+As informações deverão ser armazenadas em uma lista de lista:
+Após a tarefa ser inserida. Reportar a mensagem :
+> Tarefa "{tarefa}" adicionada com sucesso.
+lista_tarefas = [["estudar",False],["lavar carro",False],[]]
+'''
+
+#2.Remover Tarefas: 
+'''
+O programa deverá solicitar a tarefa a ser removida e
+procurar na lista. Se encontrar, remover e reportar a 
+mensagem:
+> Tarefa "{tarefa}" removida com sucesso !!
+Caso contrário:
+> A tarefa "{tarefa}" não está na lista !! 
+
+'''
+#3.Exibir Todas as Tarefas: 
+'''
+O programa deverá exibir todas as tarefas, indicando se 
+cada uma está "realizada" - True ou "não realizada" - False.
+
+#### Tarefas atuais ####
+1. estudar              - realizada
+2. lavar carro          - Não realizada
+3. enviar e-mail        - realizada
+4. fazer compras        - Não realizada
+
+Caso não tenha nenhuma tarefa , reportar a mensagem :
+> Não existe tarefas na lista.
+'''
+
+#4.Marcar Tarefas como Realizadas: 
+'''
+O programa deverá solicitar a tarefa a ser marcada como realizada 
+e procurar na lista. Se a tarefa já estiver marcada , reportar a 
+mensagem:
+> A tarefa "{tarefa}" já foi realizada.
+Caso a tarefa ainda não esteja marcada, marcar e reportar a 
+mensagem:
+> Tarefa "{tarefa}" marcada como realizada.
+Se a tarefa não for encontrada , reportar a mensagem:
+> A tarefa "{tarefa}" não foi encontrada.
+'''
+
+#5.Listar Tarefas Realizadas: O programa deverá exibir 
+#todas as tarefas que já foram concluídas (realizadas).
+'''
+## Tarefas realizadas ##
+1. estudar              - realizada
+3. enviar e-mail        - realizada
+'''
+
+#6.Listar Tarefas Não Realizadas: O programa deverá 
+#exibir todas as tarefas que ainda estão pendentes 
+#(não realizadas).
+'''
+## Tarefas não realizadas ##
+2. lavar carro          - Não realizada
+4. fazer compras        - Não realizada
+'''
+#==============================================================#
