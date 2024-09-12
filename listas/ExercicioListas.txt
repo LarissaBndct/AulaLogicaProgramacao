@@ -1,0 +1,43 @@
+### Lista aula 05-09-2024  ###
+###========================###
+#Exer1-Programa - Calculadora simples : O usuário escolhe a 
+#operação desejada e o programa calcula o resultado:
+#As funções recebem os operadores, executa a operação e
+#imprime o resultado, portanto, não tem retorno.
+#Funções : menu(), somar(), subtrair(), multiplicar() e dividir()
+'''
+Menu de opções:
+1. Soma
+2. Subtração
+3. Multiplicação
+4. Divisão
+5. Sair
+'''
+
+#Exer2-Programa para  calcular a área de figuras 
+#geométricas : quadrado, círculo, triângulo ou trapézio:
+#As funções não receberão parâmetros, pois os dados de
+#entrada serão solicitados internamente na mesma e 
+#não retornarão resultados.
+'''
+Menu de opções:
+1. Área do quadrado  ---> lado * lado
+2. Área do círculo   ---> math.pi * (raio**2)
+3. Área do triângulo ---> (base * altura) / 2
+4. Área do trapézio  ---> ((base_maior + base_menor) * altura) / 2
+5. Sair
+'''
+
+#Exer3-Programa lista itens de compras:Este programa permitirá 
+#que o usuário adicione ,remova e visualize os itens da lista de 
+#compras. 
+#As funções adicionar e remover itens receberão como parâmetros
+#a lista e o item a ser adicionado (append) ou removido (remove).
+#O programa deverá validar o item digitado, ou seja, o item não 
+#poderá ser vázio. Utilizar o método strip() - remove os espaços
+#em branco do inicio ou final da string.
+#Exemplo: item = input("Digite o item comprado : ").strip()
+#Caso o usuário tecle <enter> no item, o programa deverá indicar
+#item inválido e solicitar que o mesmo digite o item novamente.
+
+
