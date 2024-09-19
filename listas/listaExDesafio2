@@ -1,0 +1,44 @@
+import os
+
+acidentes = []
+
+#funções
+def Menu():
+    print("Selecione uma opção: ")
+    print('1.Adicionar dados do acidente')
+    print('2.Remover dados da cidade')
+    print('3.Calcular total e média de acidentes')
+    print('4.Encontrar o maior e o menor número de acidentes e as suas respectivas cidades')
+    print('5.Listar todas as cidades')
+    print('6.Sair')
+
+def AdicionarDados(acidentes):
+
+def Listar(acidentes):
+    for i,item in acidentes:
+        print(f"{i}.cidade: {item[0]:>20} {item[1]:>20} acidentes")
+#programa principal
+while True:
+    Menu()
+    opcao = input("")
+
+    if opcao == 1:
+     while True:
+        cidade = input("").strip()
+        acidente = input("").strip()
+        if cidade != "" and acidente != "":       
+            AdicionarDados(acidentes,cidade,acidente)
+            break
+        else:
+            print("Tarefa inválida !!!")
+    #elif opcao == 2:
+        #RemoverDados()
+    #elif opcao == 3:
+        #Calcular()
+    #elif opcao == 4:
+        #Encontrar()
+    elif opcao == 5:
+        Listar(acidentes)
+    elif opcao == 6:
+        os.system("cls")
+        break
