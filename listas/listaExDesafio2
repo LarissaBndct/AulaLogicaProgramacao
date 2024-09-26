@@ -4,41 +4,52 @@ acidentes = []
 
 #funções
 def Menu():
+    print("======Menu======")
     print("Selecione uma opção: ")
     print('1.Adicionar dados do acidente')
     print('2.Remover dados da cidade')
     print('3.Calcular total e média de acidentes')
     print('4.Encontrar o maior e o menor número de acidentes e as suas respectivas cidades')
     print('5.Listar todas as cidades')
-    print('6.Sair')
+    print('6.Sair ')
 
-def AdicionarDados(acidentes):
+def AdicionarDados(acidentes,cidade,acidente):
+    acidentes.append([cidade, acidente])
+    print(f"{cidade} adicionada com sucesso \n")
 
 def Listar(acidentes):
-    for i,item in acidentes:
-        print(f"{i}.cidade: {item[0]:>20} {item[1]:>20} acidentes")
+    print("======Lista======")
+    for i,item in enumerate(acidentes, 1):
+        print(f"{i}. Cidade: {item[0]} - Número de acidentes: {item[1]}")
+
 #programa principal
+
 while True:
     Menu()
-    opcao = input("")
-
-    if opcao == 1:
-     while True:
-        cidade = input("").strip()
-        acidente = input("").strip()
-        if cidade != "" and acidente != "":       
-            AdicionarDados(acidentes,cidade,acidente)
-            break
-        else:
-            print("Tarefa inválida !!!")
-    #elif opcao == 2:
+    opcao = input()
+    if opcao == '1':
+        while True:
+            cidade = input("Informe a cidade: ").strip()
+            if cidade != "":
+                acidente = input("Informe a quantidade de acidentes: ").strip()
+                if acidente != "":       
+                    AdicionarDados(acidentes,cidade,acidente)
+                    break
+                else:
+                    print("Campo não pode ser vazio")
+            else:
+                print("Campo não pode ser vazio")
+    #elif opcao == '2':
         #RemoverDados()
-    #elif opcao == 3:
+    #elif opcao == '3':
         #Calcular()
-    #elif opcao == 4:
+    #elif opcao == '4':
         #Encontrar()
-    elif opcao == 5:
-        Listar(acidentes)
+    elif opcao == '5':
+        if acidentes:
+            Listar(acidentes)
+        else:
+            print("Não há registros")
     elif opcao == 6:
         os.system("cls")
         break
