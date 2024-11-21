@@ -1,3 +1,0 @@
-papel: 4
-cafe: 5
-pao: 6

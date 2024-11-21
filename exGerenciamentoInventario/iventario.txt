@@ -1,0 +1,5 @@
+cafe:4
+pao:7
+cha:2
+torrada:6
+torrada:10
